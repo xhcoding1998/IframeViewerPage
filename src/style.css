@@ -1,0 +1,46 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #F9F7F4;
+  --bg-alt: #F2EFE9;
+  --bg-card: #FFFFFF;
+  --text: #1A1614;
+  --text-muted: #7A736D;
+  --text-light: #A89F99;
+  --accent: #1D4ED8;
+  --accent-bg: #EFF6FF;
+  --border: #E2E6ED;
+  --border-strong: #B8C2D0;
+  --radius: 4px;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+code, .mono {
+  font-family: var(--font-mono);
+}
